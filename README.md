@@ -39,6 +39,7 @@ URL for VNC access is: https://23........
 
 If you click on the link, you should then be able to view the vm from your browser. 
 
+![screenshot](https://user-images.githubusercontent.com/33649660/143733333-cd2eddd7-2260-4c02-95b7-5f7810f9dffd.png)
 
 
 
@@ -65,7 +66,7 @@ sudo apt install -y python3-pip
 ```
 
 
-Once docker, is installed, you can create new docker containers for the image provided. Use this docker image, it has noVNC and Anaconda ready for ML remote development. You can load and start a new docker container with:
+Once docker is installed, you can create new docker containers for the image provided. Use this [docker image](https://hub.docker.com/repository/docker/dillhix/mangrove), it has noVNC and Anaconda ready for ML remote development. You can load and start a new docker container with:
 
 ```
 sudo docker run -p 6080:80 -v /dev/shm:/dev/shm dillhix/mangrove:0.5
@@ -91,7 +92,6 @@ Next, copy over the container ID's of the containers that you want into the `con
 
 The resulting config file should then look like this 
 
-![screenshot](https://user-images.githubusercontent.com/33649660/143733333-cd2eddd7-2260-4c02-95b7-5f7810f9dffd.png)
 
 ```
 [ids]
